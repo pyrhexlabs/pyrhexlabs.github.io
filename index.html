@@ -30,6 +30,13 @@
       margin-bottom: 48px;
       letter-spacing: 2px;
     }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      width: 100%;
+    }
     .game {
       border: 1px solid #00ff9955;
       border-radius: 14px;
@@ -43,6 +50,14 @@
       text-shadow: 0 0 10px #ff3366aa;
       letter-spacing: 3px;
       margin-bottom: 10px;
+    }
+    .game.bounstrix { border-color: #7a6bff77; box-shadow: 0 0 25px #7a6bff33; }
+    .game.bounstrix h2 {
+      background: linear-gradient(90deg, #3df2ff, #ff5ce6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
     }
     .game p { color: #b0b0c0; margin-bottom: 22px; line-height: 1.5; }
     a.btn {
@@ -63,14 +78,22 @@
   <h1>PYRHEX LABS</h1>
   <p class="sub">Independent game studio</p>
 
-  <div class="game">
-    <h2>HYPERVOID</h2>
-    <p>Arcade sci-fi de reflejos. Esquiva las barreras electromagnéticas y sobrevive en el vacío.</p>
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.hypervoid.game">Google Play</a>
+  <div class="games">
+    <div class="game bounstrix">
+      <h2>BOUNSTRIX</h2>
+      <p>Apunta, rebota y rompe. Lanza tus bolas, destruye los bloques numerados y derrota a los jefes antes de que lleguen abajo.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.bounstrix.game">Google Play</a>
+    </div>
+
+    <div class="game">
+      <h2>HYPERVOID</h2>
+      <p>Arcade sci-fi de reflejos. Esquiva las barreras electromagnéticas y sobrevive en el vacío.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.hypervoid.game">Google Play</a>
+    </div>
   </div>
 
   <footer>
-    <a href="https://docs.google.com/document/d/17JrNM4qjtMl0KdznNiWzjF8pRcscX79M1al9bAI0jUY/edit?usp=sharing">Política de privacidad</a>
+    <a href="privacy.html">Política de privacidad · Privacy Policy</a>
   </footer>
 </body>
 </html>
