@@ -5,24 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PYRHEX LABS · Política de privacidad / Privacy Policy</title>
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
   <style>
     body { margin: 0; background: #050507; color: #e8e8f0; font: 16px/1.6 'Segoe UI', Arial, system-ui, sans-serif; }
     main { max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; }
     .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    .home { display: inline-flex; align-items: center; gap: 10px; color: #c9ccd6; text-decoration: none; font-weight: bold; letter-spacing: 3px; font-size: 14px; }
-    .home img { width: 32px; height: 32px; }
-    .home .back { color: #8d8fa0; font-size: 16px; }
-    .wm { display: flex; flex-direction: column; align-items: center; line-height: 1; font-family: 'Michroma', 'Segoe UI', sans-serif; font-weight: 400; }
-    .wm-top { display: flex; font-size: 15px; letter-spacing: 5px; margin-right: -5px; }
-    .wm-top span, .wm-top b { font-weight: 400; -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .wm-top span { background-image: linear-gradient(180deg, #ffffff 0%, #d4d7df 42%, #7b7e8a 54%, #c4c7d0 78%, #f2f3f6 100%); }
-    .wm-top b { background-image: linear-gradient(180deg, #ff7a83 0%, #ff2a3c 50%, #b10012 100%); filter: drop-shadow(0 0 4px #ff2a3c88); }
-    .wm-sub { display: flex; align-items: center; gap: 7px; margin-top: 5px; font-size: 7px; letter-spacing: 6px; color: #a4a7b3; }
-    .wm-sub::before, .wm-sub::after { content: ""; width: 16px; height: 1px; background: linear-gradient(90deg, transparent, #ff2a3c); }
-    .wm-sub::after { transform: scaleX(-1); margin-left: -6px; }
+    .home-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 42px; height: 42px; border-radius: 12px;
+      color: #c9ccd6; border: 1px solid #ffffff1f; background: #ffffff08;
+      transition: color .2s, border-color .2s, box-shadow .2s;
+    }
+    .home-btn:hover, .home-btn:focus-visible { color: #fff; border-color: #ff2a3c88; box-shadow: 0 0 16px #ff2a3c44; }
     nav.lang { font-size: 14px; }
     h1 { font-size: 28px; margin: 32px 0 4px; color: #fff; }
     h1::after { content: ""; display: block; width: 40px; height: 3px; background: #ff2a3c; margin-top: 10px; }
@@ -42,7 +35,7 @@
 <body>
 <main>
   <div class="top">
-    <a class="home" href="index.html"><span class="back">←</span><img src="img/pyrhex-mark.webp" alt="" /><span class="wm"><span class="wm-top"><span>PYRHE</span><b>X</b></span><span class="wm-sub">LABS</span></span></a>
+    <a class="home-btn" href="index.html" aria-label="Inicio / Home" title="Inicio / Home"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 9v11h4.5v-6h4v6h4.5V9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a>
     <nav class="lang"><a href="#es">Español</a> · <a href="#en">English</a></nav>
   </div>
 
