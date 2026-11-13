@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PYRHEX LABS · Independent game studio</title>
-  <meta name="description" content="PYRHEX LABS, estudio independiente de un solo desarrollador. Juegos arcade para Android: Padel Defense, Bounstrix y HyperVoid.">
+  <meta name="description" content="PYRHEX LABS, estudio independiente de un solo desarrollador. Juegos arcade para Android: One More Beat, Padel Defense, Bounstrix y HyperVoid.">
   <meta name="theme-color" content="#050507">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -96,7 +96,8 @@
     .section-title::before { content: ""; width: 26px; height: 2px; background: var(--red); }
     .section-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
-    .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+    .games { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 700px) { .games { grid-template-columns: 1fr 1fr; } }
     .game {
       --a1: #fff; --a2: #fff;
       position: relative; display: flex; flex-direction: column;
@@ -118,6 +119,7 @@
     .game.padel { --a1: #61e3ff; --a2: #eaff3e; }
     .game.bounstrix { --a1: #8f6bff; --a2: #ff5ce6; }
     .game.hypervoid { --a1: #39ff8e; --a2: #ffd83a; }
+    .game.beat { --a1: #ff4d6d; --a2: #3dffa0; }
 
     .game .head { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; position: relative; }
     .game .icon {
@@ -210,6 +212,22 @@
       <h2 class="section-title"><span lang="es">JUEGOS</span><span lang="en">GAMES</span></h2>
 
       <div class="games">
+        <article class="game beat">
+          <div class="head">
+            <img class="icon" src="img/one-more-beat.webp" alt="One More Beat" width="84" height="84" loading="lazy">
+            <div>
+              <h2>ONE MORE BEAT</h2>
+              <div class="tags"><span>Arcade</span><span lang="es">Un toque</span><span lang="en">One tap</span></div>
+            </div>
+          </div>
+          <p lang="es">Eres un latido: toca para no pararte. Salta los picos de la línea del electro, esquiva las descargas y no dejes que se quede plana.</p>
+          <p lang="en">You are a heartbeat: tap to stay alive. Jump the spikes on the ECG line, dodge the shocks and don't let it flatline.</p>
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.onemorebeat.game" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.4 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#FBBC04" d="m16.8 8.6 3.6 2c1 .6 1 2.2 0 2.8l-3.6 2L13.4 12z"/><path fill="#EA4335" d="M3.6 22.2 13.4 12l3.4 3.4-11.5 6.6c-.6.3-1.2.4-1.7.2z"/><path fill="#4285F4" d="M3.6 1.8c.5-.2 1.1-.1 1.7.2l11.5 6.6-3.4 3.4z"/></svg>
+            <span><small lang="es">DISPONIBLE EN</small><small lang="en">GET IT ON</small><strong>Google Play</strong></span>
+          </a>
+        </article>
+
         <article class="game padel">
           <div class="head">
             <img class="icon" src="img/padel-defense.webp" alt="Padel Defense" width="84" height="84" loading="lazy">
